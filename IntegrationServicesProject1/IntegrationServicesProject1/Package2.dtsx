@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="Package2"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{DE658971-2A98-42B7-AEC6-A749E86CFBB0}">
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{DC5BFA93-8538-404E-A0F9-88EE12902A0A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -489,13 +489,13 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Execute SQL Task"
+      DTS:refId="Package\TRUNCATE TABLE"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
       DTS:DTSID="{54b41606-641e-4306-b22a-b24a23e3aa88}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Execute SQL Task"
+      DTS:ObjectName="TRUNCATE TABLE"
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -511,7 +511,7 @@
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
       DTS:DTSID="{5F259148-A3CA-42F4-A72F-425715E903CA}"
-      DTS:From="Package\Execute SQL Task"
+      DTS:From="Package\TRUNCATE TABLE"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
       DTS:To="Package\Data Flow Task 2" />
@@ -531,37 +531,25 @@
         <NodeLayout
           Size="160,42"
           Id="Package\Data Flow Task 2"
-          TopLeft="425,411" />
+          TopLeft="435,412" />
         <NodeLayout
-          Size="163,42"
-          Id="Package\Execute SQL Task"
+          Size="165,42"
+          Id="Package\TRUNCATE TABLE"
           TopLeft="432,298" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="513.5,340">
+          TopLeft="514.75,340">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-8.5,71"
+              EndConnector="0,72"
               Start="0,0"
-              End="-8.5,63.5">
+              End="0,64.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,31.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.5"
-                    Point2="0,35.5"
-                    Point3="-4,35.5" />
-                  <mssgle:LineSegment
-                    End="-4.5,35.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-4.5,35.5"
-                    Point2="-8.5,35.5"
-                    Point3="-8.5,39.5" />
-                  <mssgle:LineSegment
-                    End="-8.5,63.5" />
+                    End="0,64.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
